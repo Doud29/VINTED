@@ -12,9 +12,9 @@ const mongoose = require("mongoose");
 //Cloundinary  [Base de données photo]
 const cloudinary = require("cloudinary").v2;
 
-app.use(formidable());
-
 require("dotenv").config();
+
+app.use(formidable());
 
 // mongoose.connect permet ici de se connecter à la base de données locale nommée "vinted"
 mongoose.connect(process.env.MONGODB_URI);

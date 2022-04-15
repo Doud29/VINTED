@@ -33,8 +33,8 @@ router.post("/user/signup", async (req, res) => {
     console.log("la route singup a été sollicitée");
     //on encode notre mot de passe pour éviter que ce dernier ne soit pas utilisable
 
-    let pictureToUpload = req.files.avatar.path;
-    const result = await cloudinary.uploader.upload(pictureToUpload);
+    // let pictureToUpload = req.files.avatar.path;
+    // const result = await cloudinary.uploader.upload(pictureToUpload);
 
     const isEmailExisting = await User.findOne({ email: req.fields.email });
 
@@ -60,7 +60,7 @@ router.post("/user/signup", async (req, res) => {
           token: newUser.token,
           account: {
             username: newUser.account.username,
-            avatar: newUser.account.avatar,
+            // avatar: newUser.account.avatar,
           },
         });
       } else {
