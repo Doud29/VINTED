@@ -60,8 +60,7 @@ router.post("/user/signup", async (req, res) => {
           token: newUser.token,
           account: {
             username: newUser.account.username,
-            // avatar: newUser.account.avatar,
-            avatar: "",
+            avatar: newUser.account.avatar,
           },
         });
       } else {
