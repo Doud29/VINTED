@@ -61,6 +61,7 @@ router.post("/user/signup", async (req, res) => {
           account: {
             username: newUser.account.username,
             // avatar: newUser.account.avatar,
+            avatar: "",
           },
         });
       } else {
