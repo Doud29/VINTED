@@ -21,9 +21,9 @@ const cloudinary = require("cloudinary").v2;
 //---------------------------------------------------------------------------//
 
 cloudinary.config({
-  cloud_name: "le-r-acteur",
-  api_key: "927477243267287",
-  api_secret: "KvTumojz0oud0xPSDAtK2Ev7a_I",
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
 });
 
 //-------------------route n°1-----------------//
