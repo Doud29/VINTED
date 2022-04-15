@@ -1,2 +1,6 @@
 node_modules
 .env
+package-lock.json
+CLOUD_NAME= "le-r-acteur"
+API_KEY= "927477243267287"
+API_SECRET=: "KvTumojz0oud0xPSDAtK2Ev7a_I"
